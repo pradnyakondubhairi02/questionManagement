@@ -1,0 +1,33 @@
+.container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .que {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .que h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .que button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .ans p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+  }
+  

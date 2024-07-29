@@ -1,0 +1,28 @@
+<!-- <div *ngFor="let question of questions">
+    <app-question [question]="question"></app-question>
+  </div> -->
+
+  
+  
+  <div class="container">
+    <form (submit)="addQuestion(idx)">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input [(ngModel)]="title" class="form-control" id="title" type="text" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea [(ngModel)]="desc" class="form-control" rows="4" cols="50" name="description" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary button">Submit</button>
+    </form>
+  
+    <h1 id="title">Question List</h1>
+    <ul class="list-group mt-3">
+      <li class="list-group-item" *ngFor="let que of questions; let i = index">
+        <app-question [question]="que" (edit)="editQuestion($event)" [index]="i + 1"></app-question>
+        <button class="btn btn-danger" (click)="deleteQuestion(que.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

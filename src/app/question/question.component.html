@@ -1,0 +1,13 @@
+<div class="container">
+    <div [id]="'question-title' + question.id" class="que">
+      <h3>{{question.title}}</h3>
+      <button [id]="'edit' + question.id" (click)="emitQuestionId(index)">
+        <i class="fas fa-edit"></i>
+      </button>
+    </div>
+    <div [id]="'question-description' + question.id" class="ans">
+      <p>{{question.description}}</p>
+    </div>
+  </div>
+  
+  
